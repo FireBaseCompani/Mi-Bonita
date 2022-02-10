@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style >
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Bellefair|Comfortaa|Satisfy|Slabo+27px|Vidaloka');
+
+
+
+/* لون خلفية الصفحة */
+body{background: #DDCECD;}
+
+#container {
+/*   العرض تلقائي حتي تكون الصورة متجاوبة مع الشاشاة المختلفة */
+     width: auto;
+/*   تم وضع اقصي مساحة للعرض حتي نحافظ علي جماليات التصميم */
+     max-width: 500px;
+/*   الطول تلقائي حتي تحتفظ الصورة اللي بداخله دقتها وتكون متجاوبة */
+     height: auto;
+/*   لتوسيط الحاوية في وسط الصفحة */
+     margin: 5em auto;
+/*   اي شئ خارج نطاق الحاوية قم بأخفاءه */
+     overflow: hidden;
+/*   الاطار الخاص بالحاوية */
+     border: 10px solid #EEE5E5;
+     outline: 5px dashed #EEE5E5;
+
+     position: relative;
+/*   z-index: 1; */
+     
+     
+}
+#container img {
+     width: 100%;
+     height: 100%;
+     margin-bottom: -5px;
+     transition: all 0.3s ease-out;
+     position: relative;
+     z-index: 2;
+}
+
+
+/* الطريقة الاولي */
+/* عندما المس الصورة قم بتكبيرها */
+/* #container img:hover {transform: scale(1.2, 1.2);} */
+
+/* الطريقة الثانية */
+/* عندما المس الحاوية قم بتكبير الصورة */
+#container:hover img {
+     transform: scale(1.2, 1.2);
+     z-index: 9;
+}
+
+.box-text {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 3;
+     padding: 10px;
+    background-image: linear-gradient( 135deg, rgba(129, 255, 239, 0.50) 10%, rgba(240, 103, 180, 0.65) 100%);
+     opacity: 1;
+     transition: 0.3s linear;
+     color: #FFF;
+     font-family: 'Bellefair', serif;
+font-family: 'Satisfy', cursive;
+/* font-family: 'Slabo 27px', serif; */
+/* font-family: 'Vidaloka', serif; */
+     text-shadow: 2px 2px 2px #333;
+     
+}
+.box-text h1 {
+     font-size: 2.2em;
+     font-family: 'Bellefair', serif;
+font-family: 'Comfortaa', cursive;
+}
+.box-text p {font-size: 1.1em;}
+.box-text:hover{opacity: 0;}
+
+
+    </style>
+    <!-- Bootstrap CSS -->
+   
+
+    <title>UN AMOR SINCERO</title>
+  </head>
+  <body>
+ <!-- الحاوية -->
+<div id="container">
+<!--      الصورة ياللي بداخل الحاوية -->
+     <img src="Amor.gif" alt="Omar"> 
+     <div class="box-text">
+     <h3>Para mi Bonita</h3>
+     <p>HOLA MI CHAPARRITA HERMOSA..., MI VIDA QUIZA ESTO NO ES MUCHO PERO ES SUFICIENTE PARA DECIRTE QUE ERES LA PERSONITA MAS HERMOSA CON LA QUE QUIERO ESTAR.............Posdata, toca el texto. 
+     
+     </div>
+</div>
+<div class="container">
+  <div class="hijo"><h2>posdata hola</h2></div>
+</div>
+ 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

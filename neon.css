@@ -1,0 +1,66 @@
+/* fuentes de google */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+.containere span {
+  font-size: 100pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Fredoka One";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.containere span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+.containere span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+.containere span:hover {
+  filter: contrast(250%);
+}
+.containere span:nth-child(1) {
+  color: #00bef8;
+}
+.containere span:nth-child(2) {
+  color: #ff0697;
+}
+.containere span:nth-child(3) {
+  color: #ff4d00;
+}
+.containere span:nth-child(4) {
+  color: #ffe600;
+}
+.containere span:nth-child(5) {
+  color: #bb00ff;
+}
+.containere span:nth-child(6) {
+  color: #bb00ff;
+}
+.containere span:nth-child(7) {
+  color: #ff0697;
+}
+.containere span:nth-child(8) {
+  color: #ff4d00;
+}
+.containere span:nth-child(9) {
+  color: #ffe600;
+}
+.containere span:nth-child(10) {
+  color: #bb00ff;
+}
+.containere span:nth-child(11) {
+  color: #bb00ff;
+}
+.containere{
+  position: absolute;
+}
